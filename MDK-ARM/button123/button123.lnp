@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"button123\startup_stm32f103xb.o"
+"button123\main.o"
+"button123\stm32f1xx_it.o"
+"button123\stm32f1xx_hal_msp.o"
+"button123\stm32f1xx_hal_gpio_ex.o"
+"button123\stm32f1xx_hal_tim.o"
+"button123\stm32f1xx_hal_tim_ex.o"
+"button123\stm32f1xx_hal.o"
+"button123\stm32f1xx_hal_rcc.o"
+"button123\stm32f1xx_hal_rcc_ex.o"
+"button123\stm32f1xx_hal_gpio.o"
+"button123\stm32f1xx_hal_dma.o"
+"button123\stm32f1xx_hal_cortex.o"
+"button123\stm32f1xx_hal_pwr.o"
+"button123\stm32f1xx_hal_flash.o"
+"button123\stm32f1xx_hal_flash_ex.o"
+"button123\stm32f1xx_hal_exti.o"
+"button123\system_stm32f1xx.o"
+--strict --scatter "button123\button123.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "button123.map" -o button123\button123.axf
